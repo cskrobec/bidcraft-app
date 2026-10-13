@@ -1,0 +1,11 @@
+BidCraft v1.5 Live AI Pilot
+
+IMPORTANT: Netlify Drop static ZIP upload may not deploy the Netlify Function. To enable live AI, use a Git-connected Netlify deployment (GitHub) or Netlify CLI.
+
+1. Upload this project's contents (not the outer folder) to a GitHub repository. Never add your API key to source code.
+2. In Netlify, import the GitHub repository as a new project, or connect your existing BidCraft Netlify site to it to retain the site URL.
+3. Netlify reads netlify.toml and deploys the function in netlify/functions/ai.mjs.
+4. Confirm OPENAI_API_KEY exists in the Netlify site Environment variables, available to Functions. Trigger a fresh deploy.
+5. Visit the deployed site and try a plumbing request. If errors occur check Netlify Function logs and API billing.
+
+This is a focused live AI Smart Scope pilot, not a replacement for v1.4's full demo flows. No actual dispatch, vendors, payments or authorization. Conversation is held in browser memory and sent to OpenAI when submitted. Add authentication, rate limiting, privacy notices, monitoring and spend controls before public release.
